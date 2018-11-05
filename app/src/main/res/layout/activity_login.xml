@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sing_in_co_ordinate">
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/mlm"
+            android:layout_height="101dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:background="#3d878484"
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@drawable/back_re"
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <ImageView
+                android:layout_margin="1dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:tint="@color/white"
+                android:src="@drawable/ic_person_outline_black_24dp"
+                android:background="@drawable/back_re"
+                android:layout_width="43dp"
+                android:layout_height="43dp" />
+            <EditText
+                android:id="@+id/userIdET"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                android:hint="User Id"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/back_re"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <ImageView
+                android:layout_margin="1dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:tint="@color/white"
+                android:src="@drawable/ic_lock_outline_black_24dp"
+                android:background="@drawable/back_re"
+                android:layout_width="43dp"
+                android:layout_height="43dp" />
+            <EditText
+                android:id="@+id/passwordET"
+                android:inputType="textPassword"
+                android:textSize="14sp"
+                android:hint="Password"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+
+                android:onClick="forgetPassword"
+                android:textSize="12sp"
+                android:text="Forgot..?"
+                android:layout_marginRight="3dp"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <Button
+            android:onClick="loginB"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/back_re"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Login"
+            android:id="@+id/login_B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <!--<LinearLayout
+    android:background="@color/pd_back"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/pdLO"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:layout_gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Loading..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>-->
+
+</android.support.design.widget.CoordinatorLayout>
